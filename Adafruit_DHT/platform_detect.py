@@ -74,7 +74,7 @@ def pi_revision():
                 # Assume revision 2 if revision ends with any other 4 chars.
                 return 2
         # Couldn't find the revision, throw an exception.
-        raise RuntimeError('Could not determine Raspberry Pi revision.')
+        return 2
 
 
 def pi_version():
